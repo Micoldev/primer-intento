@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa - Roperito de Grisel</title>
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .boton {
+            padding: 10px 20px;
+            background-color: #f0a500;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+     
+        #productos {
+            padding: 40px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .productos {
+            display: flex;
+            justify-content: space-around;
+            gap: 15px;
+        }
+
+        .producto {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .producto:hover {
+            transform: scale(1.05);
+        }
+
+        .producto button {
+            background-color: #f0a500;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .producto button:hover {
+            background-color: #333;
+        }
+
+       
+        #contacto {
+            padding: 40px;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #333;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #f0a500;
+        }
+
+     
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        footer ul li a {
+            color: #f0a500;
+            text-decoration: none;
+        }
+
+        .buscar {
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid #333;
+            border-radius: 5px;
+            padding: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .buscar:hover {
+            background-color: #f0a500;
+        }
+
+        .buscar input[type="text"] {
+            border: none;
+            outline: none;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <section class="hero">
+            <img src="LogoDos.jpg.waw.jpg" alt="logo de nuestra empresa">
+            <p>Explora nuestra colección de ropa moderna para cada ocasión.</p>
+            <a href="#productos" class="boton">Ver Colección</a>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="productos">
+        <h2>Productos Destacados</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="camisa.jpg" alt="Camisa casual">
+                <h3>Camisa Casual</h3>
+                <p>$35.00</p>
+                <button>Comprar Ahora</button>
+            </div>
+            <div class="producto">
+                <img src="pantalones.jpg" alt="Pantalones jeans">
+                <h3>Pantalones Jeans</h3>
+                <p>$45.00</p>
+                <button>Comprar Ahora</button>
+            </div>
+            <div class="producto">
+                <img src="vestido.jpg" alt="Vestido elegante">
+                <h3>Vestido Elegante</h3>
+                <p>$60.00</p>
+                <button>Comprar Ahora</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonios">
+            <blockquote>
+                <p>"La calidad de la ropa es increíble, y los estilos están siempre a la moda. ¡Recomendado!"</p>
+                <cite>- María Pérez</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Siempre encuentro algo para cada ocasión. ¡Modern Style es mi tienda favorita!"</p>
+                <cite>- Juan Gómez</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2024 Roperito de Grisel- Todos los derechos reservados</p>
+        <ul>
+            <li><a href="https://www.facebook.com/share/12BLPWyrPRV/?mibextid=qi2Omg">Contactanos por Facebook</a></li>
+            <li><a href="https://wa.me/5491150009402">WhatsApp</a></li>
+        </ul>
+    </footer>
+
+    
+    <script>
+        function buscar() {
+            alert("Buscando productos...");
+        }
+    </script>
+
+    <div class="buscar" onclick="buscar()">
+        <input type="text" placeholder="Buscar...">
+        <button>🔍</button>
+    </div>
+</body>
+</html>
